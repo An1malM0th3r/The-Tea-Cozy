@@ -61,6 +61,13 @@ nav li {
     padding-right: 0.5rem;
 }
 
+@media only screen and (max-width: 550px) {
+    nav li {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
 /* Main Content */
 
 /* Our Mission */
@@ -153,6 +160,15 @@ div .images-container-square {
     margin: 0 20px;
 }
 
+@media only screen and (max-width: 550px) {
+    div .images-container-square {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 20px;
+    }
+}
+
 div .black-square {
     display: block;
     background-color: black;
@@ -160,6 +176,17 @@ div .black-square {
     width: 300px;
     margin: 40px;
     margin-top: 15px;
+}
+
+@media only screen and (max-width: 550px) {
+    div .black-square {
+        display: block;
+        background-color: black;
+        height: 300px;
+        width: 300px;
+        margin: 5px;
+        margin-top: 15px;
+    }
 }
 
 .locations-content {
@@ -188,3 +215,4 @@ div .black-square {
     margin-left: 20px;
     margin-bottom: 20px;
 }
+
