@@ -7,6 +7,12 @@ html {
     text-align: center;
 }
 
+@media only screen and (max-width: 550px) {
+    h2 {
+        text-decoration: underline;
+    }
+}
+
 .main-content {
     position: relative;
     top: 70px; /* To offset for fixed header. */
@@ -110,6 +116,15 @@ div h4 {
     font-size: 1.5rem;
 }
 
+@media only screen and (max-width: 550px) {
+    div .mission-background {
+        background-size: contain;
+        height: 25rem;
+        align-items: flex-end;
+    }
+    }
+}
+
 /*Tea of the Month*/
 div .totm-content {
     display: block;
@@ -158,7 +173,6 @@ div .locations-background {
     div .locations-background {
         background-image: none;
         background-color: black;
-        border: solid 1px white;
         height: auto;
     }
 }
@@ -177,11 +191,12 @@ div .images-container-square {
 }
 
 @media only screen and (max-width: 550px) {
-    div .images-container-square {
+    div .images-container-square, div .locations-header {
         display: inline-block;
         align-items: center;
         justify-content: center;
         margin: 0 20px;
+        padding-top: 0;
     }
 }
 
